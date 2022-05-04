@@ -78,6 +78,7 @@ li {
   margin-right: 20px;
   position: relative;
   bottom: 4px;
+  cursor: pointer;
 }
 
 .todo::after {
@@ -90,6 +91,7 @@ li {
   margin-left: auto;
   position: relative;
   bottom: 4px;
+  cursor: pointer;
 }
 
 .completed {
@@ -100,6 +102,7 @@ li {
 
 .completed::before {
   content: url("images/check.svg");
+  cursor: pointer;
 }
 
 .btn {
