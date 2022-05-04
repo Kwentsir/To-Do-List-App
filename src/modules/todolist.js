@@ -1,4 +1,4 @@
-import ToDo from "./todo.js";
+import ToDo from './todo.js';
 
 export default class ToDoList {
   constructor() {
@@ -56,14 +56,14 @@ export default class ToDoList {
   }
 
   loadToDos() {
-    const toDos = JSON.parse(localStorage.getItem("toDos"));
+    const toDos = JSON.parse(localStorage.getItem('toDos'));
     if (toDos) {
       this.#addToDos(toDos);
     }
   }
 
   #saveToDos() {
-    localStorage.setItem("toDos", JSON.stringify(this.toDos));
+    localStorage.setItem('toDos', JSON.stringify(this.toDos));
   }
 
   renderToDos() {
@@ -74,8 +74,8 @@ export default class ToDoList {
                 <p class="todo">${toDo.description}</p>
             </li>
             <hr>
-    `
+    `,
       )
-      .join("");
+      .join('');
   }
 }

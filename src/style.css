@@ -34,7 +34,7 @@ h1::after {
   height: 20px;
   align-self: flex-end;
   margin-left: auto;
-  position: relative; 
+  position: relative;
   bottom: 4px;
   cursor: pointer;
 }
