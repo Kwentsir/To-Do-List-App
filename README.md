@@ -1,56 +1,61 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# TO-DO-LIST-APP
 
-> Description the project.
+> TO-DO-LIST-APP is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JAVASCRIPT
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://kwentsir.github.io/To-Do-List-App/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+**To get a local copy up and running follow the following steps.**
 
 ### Prerequisites
 
+- **node js**
+- **code editor (eg. vscode)**
+
 ### Setup
+
+- **Copy this link `git@github.com:Kwentsir/To-Do-List-App.git`.**
+- **Get the directory that you want to clone the repository.**
+- **Open the command prompt in this directory.**
 
 ### Install
 
+- **Enter git clone `git@github.com:Kwentsir/To-Do-List-App.git`.**
+
 ### Usage
+
+- **Go to the repository folder in your command prompt `cd To-Do-List`.**
 
 ### Run tests
 
-### Deployment
+- **Run `npm install` to install the dev dependencies for linters and webpack.**
+- **Run `npm build` to build the application with webpack.**
+- **Run `npm run start` to start the development server.**
 
 
 
-## Authors
 
-👤 **Author1**
+## Author
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Author**
 
-👤 **Author2**
+- GitHub: [@githubhandle](https://github.com/Kwentsir)
+- Twitter: [@twitterhandle](https://twitter.com/jkwentsir)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/josephkwentsir/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
