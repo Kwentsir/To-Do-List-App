@@ -7,14 +7,6 @@ export const addToList = (list) => {
   }
 };
 
-export const removeCompletedFromList = (list) => {
-  list.removeAllCompleted();
-};
-
-export const updateCompleted = (list, id) => {
-  list.updateToDoCompleted(id);
-};
-
 export const updateDescription = (list, id, description) => {
   list.updateDescription(+id, description);
 };

@@ -108,3 +108,11 @@ input {
   color: grey;
   font-style: italic;
 }
+
+.complete {
+  text-decoration: line-through;
+}
+
+.complete:focus {
+  text-decoration: none;
+}
