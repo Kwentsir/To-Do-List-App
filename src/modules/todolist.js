@@ -13,9 +13,10 @@ export default class ToDoList {
     this.renderToDos();
   }
 
-  #addToDos(toDos) {
-    toDos.forEach((toDo) => {
-      this.addToDo(toDo.index, toDo.description, toDo.completed);
+  #addToDoFromStorage(todos) {
+    todos.forEach((todo) => {
+      const toDo = new ToDo(todo.index, todo.description, todo.completed);
+      this.toDos.push(toDo);
     });
   }
 
@@ -23,8 +24,14 @@ export default class ToDoList {
     return this.toDos;
   }
 
+  updateDescription(index, description) {
+    this.toDos[index].description = description;
+    this.#saveToDos();
+    this.renderToDos();
+  }
+
   removeToDo(id) {
-    this.toDos = this.toDos.filter((toDo) => toDo.index !== id);
+    this.toDos = this.toDos.filter((toDo) => toDo.index !== +id);
     this.#rearrangeToDos();
     this.#saveToDos();
     this.renderToDos();
@@ -58,7 +65,7 @@ export default class ToDoList {
   loadToDos() {
     const toDos = JSON.parse(localStorage.getItem('toDos'));
     if (toDos) {
-      this.#addToDos(toDos);
+      this.#addToDoFromStorage(toDos);
     }
   }
 
@@ -70,9 +77,11 @@ export default class ToDoList {
     return this.toDos
       .map(
         (toDo) => `
-            <li>
-                <p class="todo">${toDo.description}</p>
-            </li>
+<div class="container">
+                <i data-id=${toDo.index} class="check fa ${toDo.completed ? 'fa-solid fa-check' : 'fa-regular fa-square'}"></i>
+                <input data-id=${toDo.index} class="todo ${toDo.completed ? 'complete' : ''}" value="${toDo.description}">
+                <i class="fas fa-trash-can" data-id=${toDo.index}></i>
+            </div>
             <hr>
     `,
       )
