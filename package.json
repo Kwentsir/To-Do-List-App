@@ -12,6 +12,8 @@
     "hint": "^6.1.10",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "jsdom": "^19.0.0",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
@@ -41,8 +43,5 @@
   "bugs": {
     "url": "https://github.com/Kwentsir/To-Do-List-App/issues"
   },
-  "homepage": "https://github.com/Kwentsir/To-Do-List-App#readme",
-  "dependencies": {
-    "jsdom": "^19.0.0"
-  }
+  "homepage": "https://github.com/Kwentsir/To-Do-List-App#readme"
 }
