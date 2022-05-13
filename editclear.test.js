@@ -38,11 +38,13 @@ describe("Edit task input", () => {
     toDoList.addToDo("task1");
     toDoList.addToDo("task2");
     toDoList.addToDo("task3");
-    toDoList.removeAllCompleted(0);
+    toDoList.updateToDoCompleted(0);
+    toDoList.updateToDoCompleted(1);
+    toDoList.removeAllCompleted();
     document.querySelector(".todo-list").innerHTML = toDoList.renderToDos();
   expect(
-      document.querySelectorAll(".todo-list .container")[0].children[0].classList.contains("fa-check")
-    ).toBe(true);
+      document.querySelectorAll(".todo-list .container").length
+    ).toBe(1);
   })
   
 });
