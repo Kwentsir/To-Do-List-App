@@ -50,11 +50,17 @@
 
 ## Author
 
-👤 **Author**
+👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/Kwentsir)
 - Twitter: [@twitterhandle](https://twitter.com/jkwentsir)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/josephkwentsir/)
+
+👤 **Author1**
+
+- GitHub: [@huseyinbiyik](https://github.com/huseyinbiyik)
+- Twitter: [@huseyin__biyik](https://twitter.com/huseyin__biyik)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/huseyin-b%C4%B1y%C4%B1k/)
 
 
 ## 🤝 Contributing
